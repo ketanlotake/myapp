@@ -4,6 +4,6 @@ WORKDIR /usr/src/app
 
 #COPY . .
 RUN apk update && apk add git
-RUN git clone https://github.com/ketanlotake/test.git .
+RUN git clone https://github.com/ketanlotake/myapp.git .
 RUN echo ls -lrt
 RUN npm install --production
