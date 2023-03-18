@@ -4,5 +4,9 @@ WORKDIR /usr/src/app
 
 #COPY . .
 RUN apk update && apk add git
+RUN apk add --no-cache python3-dev libxml2-dev libxslt-dev gcc musl-dev
+RUN apk add --no-cache py3-pip
+RUN pip3 install beautifulsoup4
+RUN apk add  mongodb mongodb-tools
 RUN git clone https://github.com/ketanlotake/myapp.git /usr/src/app
 RUN npm install --production
