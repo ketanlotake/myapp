@@ -12,8 +12,11 @@ const Index = ({ pets }) => (
           <h5 className="pet-name">{pet.name}</h5>
           <div className="main-content">
             <p className="pet-name">{pet.name}</p>
-            <p className="owner">Owner: {pet.owner_name}</p>
-
+            <p className="owner">{pet.owner_name}</p>
+            <p className="species">{pet.species}</p>
+            <p className="age">{pet.age}</p>
+            <p className="poddy_trained">{pet.poddy_trained}</p>
+            <p className="diet">{pet.diet}</p>
             {/* Extra Pet Info: Likes and Dislikes */}
             <div className="likes info">
               <p className="label">Likes</p>
